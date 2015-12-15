@@ -1,0 +1,8 @@
+-48.2	23.55
+-46.47	27.26
+-53.38	37.3
+-70.0	27.26
+-66.94	23.55
+-51.0	45.0
+# First five rows are X Y joint positions starting with input
+# last row is coupler

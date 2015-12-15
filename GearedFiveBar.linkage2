@@ -1,0 +1,34 @@
+<linkage2>
+	<program zoom="2.197000" xoffset="-522" yoffset="-250" scalefactor="1.000000" units="Millimeters" viewlayers="4294967294" editlayers="2147483646"/>
+	<connector id="0" selected="false" layer="16" x="-188.917029" y="92.295967" anchor="true" input="true" rpm="15.000000" color="16711680"/>
+	<connector id="1" selected="false" layer="16" x="-262.284069" y="92.295883" anchor="true" color="12632064"/>
+	<connector id="4" selected="false" layer="16" x="-274.285714" y="106.809099" color="13158600"/>
+	<connector id="5" selected="false" layer="16" x="-182.089341" y="106.809099" color="13158600"/>
+	<connector id="3" selected="false" layer="16" x="-209.157571" y="146.220356" color="16711808"/>
+	<connector id="6" selected="false" layer="16" x="-200.054248" y="176.326531" draw="true" color="16744448"/>
+	<Link id="1" selected="false" layer="16" linesize="1" gear="true" color="12632064">
+		<connector id="0"/>
+		<connector id="5"/>
+	</Link>
+	<Link id="0" selected="false" layer="16" linesize="1" gear="true" color="16711680">
+		<connector id="1"/>
+		<connector id="4"/>
+	</Link>
+	<Link id="2" selected="false" layer="16" linesize="1" color="32768">
+		<connector id="3"/>
+		<connector id="5"/>
+	</Link>
+	<Link id="3" selected="false" layer="16" linesize="1" color="16711808">
+		<connector id="6"/>
+		<connector id="4"/>
+		<connector id="3"/>
+	</Link>
+	<selected>
+	</selected>
+	<ratios>
+		<ratio type="gears" sizeassize="false">
+			<link id="1" size="1.000000"/>
+			<link id="0" size="2.000000"/>
+		</ratio>
+	</ratios>
+</linkage2>

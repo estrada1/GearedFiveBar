@@ -1,0 +1,13 @@
+41.395	26.641   #joint12 
+27.690	19.705   #joint14
+27.690	31.092   #joint15
+46.756	27.872   #joint23
+32.223	24.547   #joint34
+21.602	24.375   #joint36
+23.149	38.227   #joint56
+23.771	0.003     #foot
+# Joint locations for Klann linkage, leg retracted.
+# See http://www.mekanizmalar.com/mechanicalspider.html 
+# The first 3 rows are for the fixed points.
+# The next 4 rows are moving joints, ending with the leg.
+

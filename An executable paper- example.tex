@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage[affil-it]{authblk}
+\usepackage{graphicx}
+\usepackage[space]{grffile}
+\usepackage{latexsym}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false,pdfborder={0 0 0}}
+\usepackage{textcomp}
+\usepackage{longtable}
+\usepackage{multirow,booktabs}
+
+
+
+\begin{document}
+
+\title{Hello, IPython notebook.}
+
+\author{Alberto Pepe}
+\affil{Affiliation not available}
+
+
+\date{\today}
+
+\bibliographystyle{plain}
+
+\maketitle 
+
+\begin{abstract}
+This is an example article showing Authorea's new \textbf{iPython
+integration} features. Take a look at the figures in this paper. When
+you hover on a figure, a \textbf{``Launch Ipython''} button should
+appear. Click it and you'll be spinning a virtual machine which takes
+all analysis (iPython notebooks, makefiles, etc) and data behind that
+plot and runs it for you to play with. Enjoy!
+
+\end{abstract}
+
+
+
+
+\section{Introduction}
+History shows Galileo to be much more than an
+astronomical hero, though. His clear and careful record keeping and
+publication style not only let Galileo understand the Solar System, it
+continues to let \emph{anyone} understand \emph{how} Galileo did it.
+Galileo's notes directly integrated his \textbf{data} (drawings of
+Jupiter and its moons), key \textbf{metadata} (timing of each
+observation, weather, telescope properties), and \textbf{text}
+(descriptions of methods, analysis, and conclusions). Critically, when
+Galileo included the information from those notes in \emph{Siderius
+Nuncius} \cite{galilei}, this integration of text, data and metadata was
+preserved, as shown in Figure 1. Galileo's work advanced the
+"Scientific Revolution,'' and his approach to observation and analysis
+contributed significantly to the shaping of today's modern "Scientific
+Method'' \cite{galilei1618assayer,galilei1957discoveries}. 
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.7\columnwidth]{figures/fit/simple_plot}
+\caption{The original data (blue curve) has been fit by a model (red curve) consisting of the band structure, superconducting gap, and self-energy.%
+}
+\end{center}
+\end{figure}
+
+\section{A more advanced example}
+We produce an aggregate mood vector $m_d$ for the set of tweets submitted on a particular date $d$, denoted $T_d \subset T$ by simply averaging the mood vectors of the tweets submitted that day, i.e.
+\[m_d = \frac{\sum_{\forall t \in T_d} \hat{m}}{||T_d||}\]
+The time series of aggregated, daily mood vectors $m_d$ for a particular period of time $[i,i+k]$, denoted $\theta_{m_d}[i,k]$, is then defined as:
+\[ \theta_{m_d}[i,k] = [ m_{i}, m_{i+1}, m_{i+2}, \cdots, m_{i+k}] \]
+A different number of tweets is submitted on any given day. Each entry of $ \theta_{m_d}[i,k]$ is therefore derived from a different sample of $N_d = ||T_d||$ tweets. The probability that the terms extracted from the tweets submitted on any given day match the given number of POMS adjectives $N_p$ thus varies considerably along the binomial probability mass function:
+\[P(K=n) = \left(\begin{array}{c}N_p\\||W(T_d)||\end{array}\right)p^{||W(T_d)||}(1-p)^{N_p-||W(T_d)||}\]
+where $P(K=n)$ represents the probability of achieving $n$ number of POMS term matches, $||W(T_d)||$ represents the total number of terms extracted from the tweets submitted on day $d$ vs. $N_p$ the total number of POMS mood adjectives. Since the number of tweets per day has increased consistently from Twitter's inception in 2006 to present, this leads to systemic changes in the variance of $\theta_{m_d}[i,k]$ over time.  In particular, the variance is larger in the early days of Twitter, when tweets are relatively scarce. As the number of tweets per day increases, the variance of the time series decreases. This effect makes it problematic to compare changes in the mood vectors of $\theta[i,k]$ over time.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.7\columnwidth]{figures/advanced/advanced_plot}
+\caption{The original data (blue curve) has been fit by a model (red curve) consisting of the band structure, superconducting gap, and self-energy $\int_a^b f(x)\mathrm{d}x$.%
+}
+\end{center}
+\end{figure}
+
+\bibliography{bibliography/converted_to_latex.bib%
+}
+
+\end{document}
+
